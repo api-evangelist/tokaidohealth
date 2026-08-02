@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the hosts in
+  apis.yml (the company website; no API base hosts exist — Tokaido Health
+  publishes no public API). Status is the HTTP code observed at fetch time.
+  The apex host 308-redirects every path to www; no /.well-known/ document
+  was found on the www host, so no raw files were saved. /llms.txt was also
+  probed (404). robots.txt and sitemap.xml exist (200) but the sitemap lists
+  only the single homepage URL.
+hosts:
+  - host: https://www.tokaidohealth.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: https://tokaidohealth.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 308
+        note: Redirects to https://www.tokaidohealth.com (which answers 404).
+      - path: /.well-known/openid-configuration
+        status: 308
+      - path: /.well-known/oauth-authorization-server
+        status: 308
+      - path: /.well-known/api-catalog
+        status: 308
+      - path: /.well-known/ai-plugin.json
+        status: 308
