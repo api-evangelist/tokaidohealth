@@ -7,6 +7,17 @@ description: 'Tokaido Health is an AI-native medication steerage platform anchor
   and pairs recommendations with incentives that get members to switch, layering on
   top of the existing PBM and benefits stack. Founded in 2025 in San Mateo, CA; raised
   $25M in May 2026 led by Norwest Venture Partners. No public API surface is published.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
