@@ -31,6 +31,9 @@ accessModel:
   method: derived
 image: https://framerusercontent.com/images/IPiuawp8IIRw93GCpTTOxqGOTk.png
 url: https://raw.githubusercontent.com/api-evangelist/tokaidohealth/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "No public API surface is published."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
